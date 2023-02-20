@@ -8,8 +8,18 @@
 
     // BODY
     body {
+        overflow-x: hidden;
+        height: 100%;
         background: rgba(101, 75, 63, 0.3);
         background: linear-gradient(180deg, rgba(235,235,235,1) 0%, rgba(217,217,217,1) 50%, rgba(101,75,63,0.30015756302521013) 70%);
+        position: relative;
+    }
+
+    // DECORATION
+    .deco {
+        top: 650px;
+        z-index: -99;
+        position: absolute;
     }
 
     // NAVIAGTION ONE {
