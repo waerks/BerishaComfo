@@ -447,6 +447,13 @@
     }
 
     // FOOTER
+    #hr {
+        height: 2px;
+        margin: 40px 10% 20px 10%;
+        opacity: .75;
+        background-color: $black;
+    }
+
     footer {
         width: 100vw;
         margin-top: 50px;
@@ -465,8 +472,10 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-
+            gap: 0;
             .item {
+                width: 100%;
+                margin: 0;
                 padding: 0 20px;
 
                 &:first-child {
@@ -588,7 +597,7 @@
     // PAGE 2 //
 
     // PRODUITS
-    .produits {
+    .produitsT {
         background-image: url('../../img/images/fondall.jpg');
         background-repeat: no-repeat;
         background-position: center;
@@ -650,6 +659,24 @@
     // TOP VENTES
     .page {
         width: 100%;
+        margin-top: 20px;
+        padding-left: 10px;
+
+        p {
+            font-size: 11px;
+            font-weight: 300;
+
+            a {
+                text-decoration: none;
+                font-size: 11px;
+                font-weight: 300;
+                color: $blacky;
+
+                &:last-child {
+                    color: black;
+                }
+            }
+        }
     }
 
     .top {
@@ -671,6 +698,7 @@
             background-color: $brownie;
 
             h2 {
+                width: 100%;
                 padding-bottom: 20px;
                 text-align: center;
                 font-size: 15px;
@@ -702,6 +730,7 @@
                     flex-direction: column;
                     justify-content: end;
                     align-items: center;
+                    background-color: $card;
 
                     h5 {
                         font-size: 15px;
@@ -782,6 +811,101 @@
                 font-size: 12px;
                 font-weight: 400;
                 color: $black;
+            }
+        }
+    }
+
+    // CATEGORIES
+    .content {
+        width: 100vw;
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto;
+        gap: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        h2 {
+            width: 100%;
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 700;
+            color: $black;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+        }
+
+        .card {
+            height: 260px;
+            width: 300px;
+            border-radius: 15px;
+            position: relative;
+            box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.25);
+            margin-top: 50px;
+            background-color: $card;
+
+            img {
+                height: 225px;
+                width: 225px;
+                position: absolute;
+                left: calc(75px / 2);
+                bottom: 130px;
+            }
+
+            .card-body {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: center;
+
+                h5 {
+                    font-size: 15px;
+                    font-weight: 300;
+
+                    span {
+                        font-weight: 500;
+                    }
+                }
+
+                p {
+                    font-size: 12px;
+                }
+                
+                .btn {
+                    width: 100px;
+                    border: 0;
+                    border-radius: 15px;
+                    background-color: $brown;
+                }
+            }
+        }
+
+        .firsty {
+            margin-top: 0;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            ul {
+                
+                li {
+                    
+                    a {
+                        border: 0;
+                        color: $black;
+                        background: transparent;
+
+                        &:focus, &:hover {
+                            color: $white;
+                            box-shadow: none;
+                            background-color: $brownie;
+                        }
+                    }
+                }
             }
         }
     }
