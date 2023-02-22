@@ -57,7 +57,7 @@
                 margin-bottom: 25px;
                 font-size: 40px;
                 font-weight: 700;
-                text-shadow: 0 15px 0 rgba(255, 255, 255, 0.2);
+                text-shadow: 0px 8px 0px rgba(255, 255, 255, 0.2);
                 color: $white;
             }
 
@@ -129,7 +129,7 @@
                 text-align: center;
                 font-size: 25px;
                 font-weight: 700;
-                text-shadow: 0 10px 0 rgba(0, 0, 0, 0.05);
+                text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.05);
             }
 
             p {
@@ -179,7 +179,7 @@
                 text-align: center;
                 font-size: 25px;
                 font-weight: 700;
-                text-shadow: 0 10px 0 rgba(0, 0, 0, 0.05);
+                text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.05);
             }
         }
 
@@ -296,11 +296,11 @@
                 text-align: center;
                 font-size: 25px;
                 font-weight: 700;
-                text-shadow: 0 10px 0 rgba(0, 0, 0, 0.05);
+                text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.05);
             }
         }
 
-        .content {
+        .contentP {
 
             .compteur {
                 display: grid;
@@ -308,16 +308,16 @@
 
                 .img {
                     height: 276px;
-                    width: 380px;
+                    width: 350px;
 
                     img {
                         height: auto;
-                        width: 380px;
+                        width: 350px;
                     }
                 }
 
                 .compte {
-                    width: 380px;
+                    width: 350px;
                     padding: 15px;
                     background-color: $brown;
 
@@ -367,7 +367,7 @@
 
                 .vid {
                     height: 243px;
-                    width: 380px;
+                    width: 350px;
                 }
             }
         }
@@ -384,7 +384,7 @@
                 text-align: center;
                 font-size: 25px;
                 font-weight: 700;
-                text-shadow: 0 10px 0 rgba(0, 0, 0, 0.05);
+                text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.05);
             }
         }
 
@@ -615,7 +615,7 @@
                 margin-bottom: 25px;
                 font-size: 40px;
                 font-weight: 700;
-                text-shadow: 0 15px 0 rgba(255, 255, 255, 0.2);
+                text-shadow: 0px 8px 0px rgba(255, 255, 255, 0.2);
                 color: $white;
             }
 
@@ -705,7 +705,7 @@
                 font-size: 15px;
                 font-weight: 500;
                 color: $white;
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+                text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.05);
             }
 
             .card {
@@ -730,6 +730,7 @@
                     flex-direction: column;
                     justify-content: end;
                     align-items: center;
+                    border-radius: 15px;
                     background-color: $card;
 
                     h5 {
@@ -756,6 +757,47 @@
 
             .firsty {
                 margin-top: 0;
+            }
+
+            .porte {
+
+                .card-body {
+
+                    h5 {
+                        margin-top: 120px;
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                        font-size: 12px;
+                    }
+
+                    .btn {
+                        width: 100px;
+                        border: 0;
+                        border-radius: 15px;
+                        margin-top: 20px;
+                        background-color: $brown;
+                    }
+                }
+            }
+
+            .fenech {
+
+                .card-body {
+
+                    h5 {
+                        margin-top: 120px;
+                    }
+
+                    .btn {
+                        width: 100px;
+                        border: 0;
+                        border-radius: 15px;
+                        margin-top: 20px;
+                        background-color: $brown;
+                    }
+                }
             }
 
             button {
@@ -832,7 +874,7 @@
             font-size: 15px;
             font-weight: 700;
             color: $black;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+            text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.05);
         }
 
         .card {
@@ -912,7 +954,6 @@
     }
 
     // A PROPOS
-    // PRODUITS
     .produitsT {
         background-image: url("../../img/images/fondall.jpg");
         background-repeat: no-repeat;
@@ -930,7 +971,7 @@
                 margin-bottom: 25px;
                 font-size: 40px;
                 font-weight: 700;
-                text-shadow: 0 15px 0 rgba(255, 255, 255, 0.2);
+                text-shadow: 0px 8px 0px rgba(255, 255, 255, 0.2);
                 color: $white;
             }
 
@@ -990,7 +1031,7 @@
                 margin-bottom: 25px;
                 font-size: 40px;
                 font-weight: 700;
-                text-shadow: 0 15px 0 rgba(255, 255, 255, 0.2);
+                text-shadow: 0px 8px 0px rgba(255, 255, 255, 0.2);
                 color: $white;
             }
 
@@ -1046,7 +1087,7 @@
             font-size: 25px;
             font-weight: 700;
             color: $black;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+            text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.05);
         }
 
         p {
@@ -1067,11 +1108,11 @@
         margin-top: 40px;
 
         h2 {
-            margin-bottom: 20px;
+            margin-top: 20px;
             text-align: center;
             font-size: 25px;
             font-weight: 700;
-            text-shadow: 0 10px 0 rgba(0, 0, 0, 0.05);
+            text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.05);
         }
 
         .card {
@@ -1120,7 +1161,7 @@
                 font-size: 25px;
                 font-weight: 700;
                 color: $black;
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+                text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.05);
             }
     
             p {
@@ -1141,8 +1182,8 @@
             padding: 20px;
 
             .nous {
-                height: 230px;
-                width: 170px;
+                height: 200px;
+                width: 150px;
                 margin: 0;
                 position: relative;
 
@@ -1163,8 +1204,8 @@
                 }
     
                 div {
-                    height: 230px;
-                    width: 170px;
+                    height: 200px;
+                    width: 150px;
                     border: 1px solid $black;
                     position: absolute;
                     top: -10px;
@@ -1184,21 +1225,65 @@
             font-size: 25px;
             font-weight: 700;
             color: $black;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+            text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.05);
         }
 
-        .btns {
+        .accordeon {
+            min-height: 200px;
+
+            .accordion {
+
+                .accordion-item {
+                    background-color: $brownie2;
+
+                    .accordion-header {
+                        background-color: $brownie2;
+                    }
+
+                    .accordion-button {
+                        font-size: 11px;
+                        background-color: $brownie2;
+
+                        img {
+                            margin-right: 20px;
+                        }
+
+                        &:focus {
+                            border-color: $brown;
+                            box-shadow: none;
+                        }
+
+                        &:not(collapsed) {
+                            color: $black;
+                        }
+
+                        &:not(collapsed)::after {
+                            
+                        }
+                    }
+
+                    .accordion-collapse {
+
+                        .accordion-body {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contacter {
             width: 100%;
             display: grid;
             place-items: center;
             grid-template-columns: auto;
-            background-color: red;
+            gap: 10px;
+            margin-top: 20px;
 
             button {
                 height: 40px;
-                width: 150px;
-                margin-top: -70px;
                 border: 0;
+                padding: 0 20px;
                 border-radius: 15px;
                 background-color: $white;
 
