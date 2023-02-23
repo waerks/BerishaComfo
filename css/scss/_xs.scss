@@ -402,13 +402,12 @@
                     display: flex;
                     justify-content: space-between;
                     padding: 10px;
-                    border-radius: 15px;
+                    border-radius: 10px;
                     background-color: $white;
 
                     input {
                         width: 230px;
                         border: 0;
-                        border-radius: 15px;
                         background-color: $white;
 
                         &::placeholder {
@@ -419,7 +418,8 @@
 
                     button {
                         width: 120px;
-                        border-radius: 15px;
+                        border-radius: 10px;
+                        border: 0;
                         background-color: $brown;
 
                         a {
@@ -976,7 +976,7 @@
             }
 
             p {
-                width: 250px;
+                width: 300px;
                 text-align: center;
                 margin: 0;
                 font-size: 15px;
@@ -1024,7 +1024,6 @@
         .item1 {
             display: grid;
             place-items: center;
-            padding: 30px;
 
             h1 {
                 text-align: center;
@@ -1177,23 +1176,15 @@
         .content {
             display: grid;
             place-items: center;
-            grid-template-columns: auto auto;
+            grid-template-columns: auto;
             gap: 20px 10px;
             padding: 20px;
 
             .nous {
-                height: 200px;
-                width: 150px;
+                height: 230px;
+                width: 170px;
                 margin: 0;
                 position: relative;
-
-                &:nth-child(2n+2) {
-                    margin-top: 25px;
-                }
-
-                &:nth-child(2n+1) {
-                    margin-top: -50px;
-                }
     
                 img {
                     height: 100%;
@@ -1204,8 +1195,8 @@
                 }
     
                 div {
-                    height: 200px;
-                    width: 150px;
+                    height: 230px;
+                    width: 170px;
                     border: 1px solid $black;
                     position: absolute;
                     top: -10px;
@@ -1295,5 +1286,135 @@
                 }
             }
         }
+    }
+
+    // DEMANDER UNE OFFRE
+    .formulaire {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-image: url('../../img/images/offre.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+            text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.05);
+        }
+
+        .form {
+
+            .mb-3 {
+                display: grid;
+                place-items: center;
+
+                input {
+                    width: 330px;
+                    padding: 15px 0 15px 30px;
+                    border: 0;
+                    border-radius: 10px;
+                    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+
+                    &::placeholder {
+                        font-size: 12px;
+                        font-weight: 300;
+                        color: $input;
+                    }
+                }
+
+                textarea {
+                    height: 200px;
+                    width: 330px;
+                    padding: 15px 0 15px 30px;
+                    border: 0;
+                    border-radius: 10px;
+                    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+
+                    &::placeholder {
+                        font-size: 12px;
+                        font-weight: 300;
+                        color: $input;
+                    }
+                }
+            }
+
+            .input-group {
+                    
+                button {
+                    width: 330px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px 0 15px 30px;
+                    border: 0;
+                    border-radius: 10px;
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: $input;
+                    background-color: white;
+                    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+
+                    &::after {
+                        margin-right: 30px;
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                .show {
+                    color: $input;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                ul {
+                    width: 330px;
+                    border: 0;
+                    border-radius: 10px;
+                    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+
+                    li {
+
+                        a {
+                            font-size: 12px;
+                            font-weight: 300;
+                            color: $blacky;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sub {
+            width: 100%;
+            display: grid;
+            place-items: center;
+            margin-top: 30px;
+
+            button {
+                height: 40px;
+                padding: 0 20px;
+                border: 0;
+                border-radius: 15px;
+                background-color: $brown;
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    // CONTACTEZ NOUS
+    .cont {
+        background-image: none;
     }
 }
