@@ -10,7 +10,6 @@
     body {
         overflow-x: hidden;
         height: 100%;
-        width: 99vw;
         box-sizing: border-box;
         background: rgba(101, 75, 63, 0.3);
         background: linear-gradient(180deg, rgba(235,235,235,1) 0%, rgba(217,217,217,1) 50%, rgba(101,75,63,0.30015756302521013) 70%);
@@ -1260,10 +1259,6 @@
 
                         &:not(collapsed) {
                             color: $black;
-                        }
-
-                        &:not(collapsed)::after {
-                            
                         }
                     }
 
