@@ -28,6 +28,14 @@
     .navbar {
         background-color: $black;
 
+        .navbar-toggler {
+            border: none;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
         .navbar-collapse {
             
             .navbar-nav {
@@ -1033,6 +1041,7 @@
             h1 {
                 text-align: center;
                 margin-bottom: 25px;
+                margin-top: 30px;
                 font-size: 40px;
                 font-weight: 700;
                 text-shadow: 0px 8px 0px rgba(255, 255, 255, 0.2);
