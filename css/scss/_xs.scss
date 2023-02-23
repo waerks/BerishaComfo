@@ -10,6 +10,8 @@
     body {
         overflow-x: hidden;
         height: 100%;
+        width: 99vw;
+        box-sizing: border-box;
         background: rgba(101, 75, 63, 0.3);
         background: linear-gradient(180deg, rgba(235,235,235,1) 0%, rgba(217,217,217,1) 50%, rgba(101,75,63,0.30015756302521013) 70%);
         position: relative;
@@ -23,22 +25,25 @@
     }
 
     // NAVIAGTION ONE {
-    .nav1 {
+    .navbar {
         background-color: $black;
 
-        form {
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
+        .navbar-collapse {
+            
+            .navbar-nav {
 
-        .langue {
-            color: $white !important;
-        }
-    }
+                .dropdown-menu {
+                    background-color: $black;
 
-    // NAVIGATION TWO
-    .nav2 {
-        background-color: $whity;
+                    li {
+
+                        a {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // PAGE 1 //
