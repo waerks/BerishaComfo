@@ -1,12 +1,9 @@
 @media (min-width: 768px) {
-    
+
     // ACCUEIL
     .accueil {
         display: grid;
-        grid-template-areas:
-        'nav nav'
-        'titre content'
-        ;
+        grid-template-areas: 'nav nav' 'titre content';
 
         nav {
             grid-area: nav;
@@ -126,7 +123,7 @@
             .video {
 
                 .texte {
-                    
+
                     p {
                         padding: 0 20px;
                     }
@@ -214,12 +211,32 @@
         }
     }
 
+    // PAGES
+    .page {
+        padding-left: 30px;
+
+        p {
+            font-size: 13px;
+
+            a {
+                font-size: 13px;
+            }
+        }
+    }
+
     // NOS PRODUITS
     .all {
         grid-template-columns: auto auto;
     }
 
     .reseaux {
+
+        .titre {
+
+            h3 {
+                font-size: 25px;
+            }
+        }
 
         .carou {
             width: 80%;
@@ -233,13 +250,73 @@
                 height: 300px;
                 width: 600px;
             }
+
+            .titra {
+
+                h4 {
+                    font-size: 25px;
+                }
+
+                p {
+                    width: 70%;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .top {
+
+        .item {
+            display: grid;
+            gap: 20px;
+            grid-template-areas: 'titre titre' 'it1 it2' 'it3 it3' 'vp vp';
+
+            h2 {
+                grid-area: titre;
+            }
+
+            .card {
+                margin-top: 100px;
+            }
+
+            .it1 {
+                grid-area: it1;
+            }
+
+            .it2 {
+                grid-area: it2;
+            }
+
+            .it3 {
+                grid-area: it3;
+            }
+
+            button {
+                grid-area: vp;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .telecharge {
+        display: grid;
+        justify-content: space-evenly;
+        place-items: center;
+        grid-template-areas: 'titre titre' 'btn1 btn2';
+
+        .titre {
+            width: 100%;
+            grid-area: titre;
         }
 
-        .titra {
-            
-            p {
-                width: 70%;
-            }
+        #one {
+            grid-area: btn1;
+        }
+
+        #two {
+            grid-area: btn2;
+            margin-top: 0;
         }
     }
 }
