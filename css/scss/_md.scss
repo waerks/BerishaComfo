@@ -14,16 +14,28 @@
 
         .item1 {
             grid-area: titre;
+
+            h1 {
+                font-size: 60px;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 18px;
+            }
         }
 
         .item2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
             grid-area: content;
         }
     }
 
     .choix {
 
-        .content {
+        .contentN {
             grid-template-columns: auto auto;
 
             .item3 {
@@ -33,6 +45,8 @@
     }
 
     .produits {
+        display: grid;
+        place-items: center;
 
         .carouselle {
             width: 100%;
@@ -45,30 +59,59 @@
         }
 
         .content {
+            width: 85%;
             grid-template-columns: auto auto;
             padding: 20px 100px;
         }
 
         .voir {
+            width: 85%;
             grid-template-columns: auto auto;
             gap: 0;
-            padding: 20px 100px;
+            padding: 20px 0px;
         }
     }
 
     .meuble {
+        display: grid;
+        place-items: center;
 
         .contentP {
+            width: 85%;
             display: flex;
             justify-content: space-evenly;
             align-items: end;
+
+            .video {
+
+                .texte {
+                    
+                    p {
+                        padding: 0 20px;
+                    }
+                }
+
+                .vid {
+                    height: 200px;
+                    width: 300px;
+
+                    iframe {
+                        height: 200px;
+                        width: 300px;
+                    }
+                }
+            }
         }
     }
 
     // FOOTER
     footer {
 
-        .content {
+        .logo {
+            margin-bottom: 30px;
+        }
+
+        .contentF {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
@@ -97,6 +140,39 @@
 
             .item2 {
                 padding-left: 0;
+            }
+
+            .item3 {
+                width: 100%;
+            }
+        }
+    }
+
+    // NOS PRODUITS
+    .all {
+        grid-template-columns: auto auto;
+    }
+
+    .reseaux {
+
+        .carou {
+            width: 80%;
+        }
+
+        .confort {
+            height: 300px;
+            width: 600px;
+
+            .imga {
+                height: 300px;
+                width: 600px;
+            }
+        }
+
+        .titra {
+            
+            p {
+                width: 70%;
             }
         }
     }
