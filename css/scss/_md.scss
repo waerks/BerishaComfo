@@ -30,10 +30,33 @@
             flex-direction: column;
             justify-content: end;
             grid-area: content;
+
+            .titre {
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                h2 {
+                    font-size: 30px;
+                }
+            }
         }
     }
 
     .choix {
+
+        .titre {
+
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                width: 450px;
+                font-size: 15px;
+            }
+        }
 
         .contentN {
             grid-template-columns: auto auto;
@@ -47,6 +70,13 @@
     .produits {
         display: grid;
         place-items: center;
+
+        .titre {
+
+            h2 {
+                font-size: 30px;
+            }
+        }
 
         .carouselle {
             width: 100%;
@@ -68,13 +98,24 @@
             width: 85%;
             grid-template-columns: auto auto;
             gap: 0;
-            padding: 20px 0px;
+            padding: 20px 80px;
+
+            button {
+                width: 200px;
+            }
         }
     }
 
     .meuble {
         display: grid;
         place-items: center;
+
+        .titre {
+
+            h2 {
+                font-size: 30px;
+            }
+        }
 
         .contentP {
             width: 85%;
@@ -97,6 +138,31 @@
 
                     iframe {
                         height: 200px;
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    .newsletters {
+
+        .titre {
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        .form {
+
+            .contentA {
+                width: 100%;
+
+                .input {
+                    width: 60%;
+
+                    input {
                         width: 300px;
                     }
                 }
