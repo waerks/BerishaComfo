@@ -402,7 +402,7 @@
 
         .form {
 
-            .content {
+            .contentA {
                 width: 100%;
                 display: grid;
                 place-items: center;
@@ -489,7 +489,7 @@
             filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.05));
         }
 
-        .content {
+        .contentF {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -686,6 +686,85 @@
                 color: $blacky;
 
                 &:last-child {
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .pap {
+
+        .tp {
+            display: flex;
+
+            .carousel {
+                height: 150px;
+                width: 250px;
+
+                .carousel-inner {
+
+                    .carousel-item {
+                        height: 150px;
+                        width: 250px;
+                        object-fit: cover;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .titre {
+                margin-left: 15px;
+
+                h4 {
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+
+                span {
+                    display: block;
+                    height: 2px;
+                    width: 55px;
+                    margin: 15px 0;
+                    background-color: $black;
+                }
+
+                p {
+                    font-size: 11px;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .bt {
+            display: grid;
+            place-items: center;
+            margin: 15px 0px 60px 0px;
+            padding: 20px 40px;
+            background-color: $brown;
+
+            h3 {
+                text-align: center;
+                font-size: 15px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                color: $white;
+            }
+            
+            button {
+                height: 40px;
+                width: 150px;
+                border: 0;
+                border-radius: 15px;
+                background-color: $white;
+
+                a {
+                    text-decoration: none;
+                    font-size: 15px;
+                    font-weight: 500;
                     color: black;
                 }
             }
@@ -964,19 +1043,15 @@
             h3 {
                 font-size: 15px;
                 font-weight: 700;
-
-                span a {
-                    text-decoration: none;
-                    color: black;
-                }
             }
 
             .ligne {
                 height: 3px;
                 width: 80%;
                 margin-top: 20px;
-                background: rgb(223,223,223);
-                background: linear-gradient(270deg, rgba(223,223,223,1) 40%, rgba(0,0,0,1) 40%);
+                margin-bottom: 20px;
+                background: rgb(0,0,0);
+                background: linear-gradient(90deg, rgba(0,0,0,1) 40%, rgba(209,201,198,0) 40%);
             }
         }
 
@@ -1021,6 +1096,7 @@
         gap: 100px;
         padding-top: 20px;
         padding-bottom: 20px;
+        background-color: $brownie;
 
         h2 {
             width: 100%;
@@ -1028,8 +1104,7 @@
             text-align: center;
             font-size: 15px;
             font-weight: 700;
-            color: $black;
-            text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.05);
+            color: $white;
         }
 
         .card {
@@ -1086,6 +1161,7 @@
             width: 100%;
             display: flex;
             justify-content: center;
+            margin-top: -60px;
 
             ul {
 
@@ -1093,7 +1169,7 @@
 
                     a {
                         border: 0;
-                        color: $black;
+                        color: $white;
                         background: transparent;
 
                         &:focus,
@@ -1237,7 +1313,7 @@
 
         h2 {
             width: 100%;
-            padding-bottom: 20px;
+            padding: 0 20px 20px 20px;
             text-align: center;
             font-size: 25px;
             font-weight: 700;
@@ -1300,7 +1376,7 @@
         gap: 40px;
         margin-top: 40px;
         padding-top: 40px;
-        background-color: $brune;
+        background-color: $brownie;
 
         .titre {
             width: 100%;
@@ -1315,21 +1391,20 @@
                 text-align: center;
                 font-size: 25px;
                 font-weight: 700;
-                color: $black;
-                text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.05);
+                color: $white;
             }
     
             p {
                 width: 260px;
-                margin-bottom: 30px;
                 text-align: center;
                 font-size: 10px;
                 font-weight: 300;
                 line-height: 20px;
+                color: $white;
             }
         }
 
-        .content {
+        .contentN {
             display: grid;
             place-items: center;
             grid-template-columns: auto;
