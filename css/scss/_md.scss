@@ -1,5 +1,10 @@
 @media (min-width: 768px) {
 
+    // BUTTON
+    body button {
+        background-color: red;
+    }
+
     // ACCUEIL
     .accueil {
         display: grid;
@@ -36,6 +41,14 @@
 
                 h2 {
                     font-size: 30px;
+                }
+            }
+
+            .discover {
+
+                button {
+                    height: 50px;
+                    width: 330px;
                 }
             }
         }
@@ -98,7 +111,8 @@
             padding: 20px 80px;
 
             button {
-                width: 200px;
+                height: 50px;
+                width: 220px;
             }
         }
     }
@@ -164,6 +178,14 @@
                     }
                 }
             }
+
+            .contact {
+
+                button {
+                    height: 50px;
+                    width: 220px;
+                }
+            }
         }
     }
 
@@ -225,6 +247,20 @@
     }
 
     // NOS PRODUITS
+    .produitsT {
+
+        .item2 {
+
+            .discover {
+                
+                button {
+                    height: 50px;
+                    width: 330px;
+                }
+            }
+        }
+    }
+
     .all {
         grid-template-columns: auto auto;
     }
@@ -279,6 +315,14 @@
 
             .card {
                 margin-top: 100px;
+
+                .card-body {
+
+                    .btn {
+                        height: 40px;
+                        width: 110px;
+                    }
+                }
             }
 
             .it1 {
@@ -294,6 +338,8 @@
             }
 
             button {
+                height: 50px;
+                width: 220px;
                 grid-area: vp;
                 margin-top: 30px;
             }
@@ -309,15 +355,137 @@
         .titre {
             width: 100%;
             grid-area: titre;
+
+            h3 {
+                font-size: 18px;
+            }
         }
 
         #one {
             grid-area: btn1;
+
+            a {
+                font-size: 15px;
+            }
         }
 
         #two {
             grid-area: btn2;
             margin-top: 0;
+
+            a {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .pap {
+        display: grid;
+        place-items: center;
+
+        .tp {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .carousel {
+                height: 250px;
+                width: 70%;
+
+                .carousel-inner {
+
+                    .carousel-item {
+                        height: 250px;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .titre {
+                width: 30%;
+
+                h4 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .bt {
+            width: 80%;
+
+            h3 {
+                font-size: 18px;
+            }
+
+            button {
+                height: 50px;
+                width: 220px;
+                margin-top: 25px;
+            }
+        }
+    }
+
+    // DEMANDER UNE OFFRE
+    .formulaire {
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .sub {
+
+            button {
+                height: 50px;
+                width: 330px;
+            }
+        }
+    }
+
+    // CONTACTEZ NOUS
+    .contactez {
+
+        .titre {
+
+            h2 {
+
+                font-size: 30px;
+            }
+
+            p {
+                width: 500px;
+                font-size: 12px;
+            }
+        }
+
+        .infos {
+            flex-direction: row;
+        }
+    }
+
+    // CATEGORIES
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .card {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-top: -100px;
         }
     }
 }

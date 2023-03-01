@@ -682,6 +682,7 @@
 
     // TOP VENTES
     .page {
+        height: 50px;
         width: 100%;
         margin-top: 20px;
         padding-left: 10px;
@@ -968,6 +969,8 @@
                     }
 
                     .btn {
+                        display: grid;
+                        place-items: center;
                         width: 100px;
                         border: 0;
                         border-radius: 15px;
