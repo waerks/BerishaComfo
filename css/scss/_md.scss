@@ -483,4 +483,36 @@
             margin-top: -100px;
         }
     }
+
+    // A PROPOS
+    .propos {
+
+        .video {
+
+            iframe {
+                height: 330px;
+                width: 660px;
+            }
+        }
+    }
+
+    .client {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            width: 100%;
+        }
+    }
+
+    .equipe {
+
+        .contentN {
+            justify-content: center;
+            grid-template-columns: auto auto;
+            gap: 60px;
+        }
+    }
 }
