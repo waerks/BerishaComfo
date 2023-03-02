@@ -220,6 +220,18 @@
     .produitsT {
         height: 600px;
 
+        .item1 {
+
+            h1 {
+                font-size: 60px;
+            }
+
+            p {
+                width: 400px;
+                font-size: 20px;
+            }
+        }
+
         .item2 {
 
             .discover {
@@ -345,6 +357,18 @@
     // CONTACTEZ NOUS
     .produitsC {
         height: 500px;
+
+        .item1 {
+
+            h1 {
+                font-size: 60px;
+            }
+
+            p {
+                width: 400px;
+                font-size: 20px;
+            }
+        }
     }
 
     .contactez {
@@ -403,6 +427,18 @@
     // A PROPOS
     .produitsY {
         height: 500px;
+
+        .item1 {
+
+            h1 {
+                font-size: 60px;
+            }
+
+            p {
+                width: 400px;
+                font-size: 20px;
+            }
+        }
     }
 
     .propos {
@@ -438,7 +474,7 @@
     }
 
     .equipe {
-        
+
         .titre {
 
             h2 {
@@ -447,25 +483,39 @@
 
             p {
                 width: 500px;
-                font-size: 12px;
+                font-size: 14px;
             }
         }
 
         .contentN {
             justify-content: center;
-            grid-template-columns: auto auto auto auto;
+            grid-template-columns: auto auto;
             gap: 60px;
         }
     }
 
     .question {
-        
+
         .accordeon {
             display: grid;
             place-items: center;
 
             .accordion {
                 width: 992px;
+
+                .accordion-item {
+
+                    .accordion-button {
+                        font-size: 16px;
+                    }
+
+                    .accordion-collapse {
+
+                        .accordion-body {
+                            font-size: 16px;
+                        }
+                    }
+                }
             }
         }
     }
