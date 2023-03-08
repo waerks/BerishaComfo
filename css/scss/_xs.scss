@@ -1428,15 +1428,89 @@
             .nous {
                 height: 330px;
                 width: 270px;
+                display: grid;
+                place-items: center;
                 margin: 0;
                 position: relative;
 
-                img {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
+                .carte {
+                    height: 330px;
+                    width: 270px;
                     position: absolute;
                     z-index: 1;
+                    background-color: $white;
+                    top: 0px;
+                    left: 0px;
+
+                    .imag {
+                        height: 45%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            height: 130px;
+                            width: 130px;
+                        }
+                    }
+
+                    .nom {
+                        height: 25%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        h4 {
+                            font-size: 22px;
+                        }
+
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+
+                    .num {
+                        height: 15%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding-left: 35px;
+                        
+                        img {
+                            height: 20px;
+                            width: auto;
+                            margin-right: 15px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: $black;
+                        }
+                    }
+
+                    .mail {
+                        height: 15%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding-left: 35px;
+                        
+                        img {
+                            height: 20px;
+                            width: auto;
+                            margin-right: 15px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: $black;
+                        }
+                    }
                 }
 
                 #carre {
@@ -1447,103 +1521,18 @@
                     top: -10px;
                     left: -10px;
                 }
-            }
 
-            .nous2 {
-                height: 330px;
-                width: 270px;
-                margin: 0;
-                position: relative;
-                background-color: $white;
-
-                // img {
-                //     height: 40px;
-                //     width: auto;
-                // }
-
-                .mag {
-                    height: calc(40% - 10px);
-                    width: 100%;
-                    display: grid;
-                    place-items: center;
-                    padding-top: 30px;
-                    margin-bottom: 35px;
-
+                .survol {
+                    height: 330px;
+                    width: 270px;
+                    object-fit: cover;
+                    position: absolute;
+                    z-index: 2;
+                    
                     img {
-                        height: 130px;
-                        width: 130px;
+                        height: 100%;
+                        width: 100%;
                     }
-                }
-
-                .nom {
-                    height: 20%;
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-
-                    h4 {
-                        text-align: center;
-                        font-weight: 600;
-                    }
-
-                    p {
-                        font-size: 14px;
-                    }
-                }
-
-                .num {
-                    height: 15%;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    a {
-
-                        img {
-                            height: 30px;
-                            width: 30px;
-                        }
-
-                        span {
-                            margin-left: 40px;
-                            text-decoration: none;
-                            color: $black;
-                        }
-                    }
-                }
-
-                .mail {
-                    height: 15%;
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-
-                    a {
-
-                        img {
-                            height: 30px;
-                            width: 30px;
-                        }
-
-                        span {
-                            margin-left: 40px;
-                            text-decoration: none;
-                            color: $black;
-                        }
-                    }
-                }
-
-                #carre {
-                    height: 330px;
-                    width: 270px;
-                    border: 1px solid $white;
-                    position: absolute;
-                    top: -10px;
-                    left: -10px;
                 }
             }
         }
